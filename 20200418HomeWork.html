@@ -1,0 +1,223 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8" />
+    <title>行動商務系統設計與開發作業</title>
+
+</head>
+
+<body>
+    <style>
+        body {
+            background-image: url('images/pexels-jeerayut-rianwed-144171.jpg');
+            background-repeat: no-repeat;
+            background-color: rgba(0,0,0,0);
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        p {
+            background-color: black;
+            background-color: rgba(0,0,0,0);
+            color: white
+        }
+
+        h1 {
+            color: white
+        }
+
+        h1 {
+            background-color: rgba(0,0,0,0);
+        }
+
+        div {
+            color: white
+        }
+
+        div {
+            background-color: Black;
+            background-color: rgba(0,0,0,0);
+        }
+
+        td {
+            color: white
+        }
+
+        td {
+            background-color: rgba(0,0,0,0);
+        }
+
+        table {
+            border-block-style: inherit
+        }
+    </style>
+
+    <h1 align="center" style="letter-spacing:10pt ;text-shadow:10px 10px 6px white">自我簡介</h1>
+    <hr />
+    <table border="1" width="1000" height="50" align="center">
+        <tr>
+            <td colspan="8" align="center" style="font-family:新細明體;font-size:2em;letter-spacing:10pt">基本資料</td>
+        </tr>
+    </table>
+    <table border="1" width="1000" height="300" align="center">
+        <caption></caption>
+
+
+        <tr>
+            <td>Name</td>
+            <td>陳則宇</td>
+            <td>Sex</td>
+            <td>
+                <input type="radio" name="genger" /> <span>男</span>
+                <input type="radio" name="genger" /> <span>女</span>
+            </td>
+            <td>Birth Date</td>
+            <td>1991/05/27</td>
+            <td colspan="2" rowspan="5">
+
+
+                <img src="images/2020022165346161.jpg" width="448" height="400" align="middle" />
+
+            </td>
+
+        </tr>
+        <tr>
+            <td>Born</td>
+            <td>台北市</td>
+            <td>Citizenship</td>
+            <td>中華民國</td>
+            <td>Marital Status</td>
+            <td>
+                <select autofocus>
+                    <option>已婚</option>
+                    <option>未婚</option>
+                </select>
+            </td>
+
+        </tr>
+        <tr>
+            <td>Sign</td>
+            <td>雙子座</td>
+            <td>Education</td>
+            <td>義守大學 電子工程學系</td>
+            <td>Blood Type</td>
+            <td>O 型</td>
+
+        </tr>
+        <tr>
+            <td>Experience</td>
+            <td colspan="5">
+                <div>●詳維科技有限公司</div>
+                <div>●中冠人力資源有限公司</div>
+                <div>●富邦人壽股份有限公司</div>
+            </td>
+        </tr>
+        <tr>
+            <td>Vision</td>
+            <td colspan="5">希望這半年能把程式學好,找到程式設計的工作</td>
+        </tr>
+
+    </table>
+
+    <hr />
+    <div style="display: flex; justify-content: center; align-items: center">
+        <input id="btn1" type="button" value="放大" />
+        <input id="btn2" type="button" value="還原" />
+        <input id="btn3" type="button" value="縮小" />
+    </div>
+    <div id="news" style="text-indent: 2em ">
+        <h1>關於我</h1>
+        <p>個性活潑樂觀，喜歡和別人分享。</p>
+        <p>我的座右銘:業精於勤，荒於嬉。</p>
+        <p>我相信勤能補拙，有努力就會有收穫。</p>
+    </div>
+
+    <hr />
+    <div style="display: flex; justify-content: center; align-items: center">
+        <input id="btn4" type="button" value="放大" />
+        <input id="btn5" type="button" value="還原" />
+        <input id="btn6" type="button" value="縮小" />
+    </div>
+    <div id="news1">
+        <h1>我的興趣</h1>
+        <p>打撞球和攝影</p>
+        <p>撞球是因為它是靜態的運動，你應該沒聽過打撞球會流汗的吧?</p>
+        <p>攝影目前還只是個新手</p>
+        <p>希望未來也會有不錯的作品</p>
+        <img src="images/01.jpg" width="700" height="450" />
+        <img src="images/02.jpg" width="300" height="450" />
+    </div>
+    <hr />
+
+    <script>
+        btn1 = document.getElementById("btn1");
+        btn2 = document.getElementById("btn2");
+        btn3 = document.getElementById("btn3");
+        news = document.getElementById("news");
+
+        btn1.addEventListener('click', function () {
+            news.style.fontSize = "40pt";
+        })
+        btn2.addEventListener('click', function () {
+            news.style.fontSize = "12pt";
+        })
+        btn3.addEventListener('click', function () {
+            news.style.fontSize = "8pt";
+        })
+
+
+
+        btn4 = document.getElementById("btn4");
+        btn5 = document.getElementById("btn5");
+        btn6 = document.getElementById("btn6");
+        news1 = document.getElementById("news1");
+
+        btn4.addEventListener('click', function () {
+            news1.style.fontSize = "40pt";
+        })
+        btn5.addEventListener('click', function () {
+            news1.style.fontSize = "12pt";
+        })
+        btn6.addEventListener('click', function () {
+            news1.style.fontSize = "8pt";
+        })
+
+    </script>
+
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+
+    <form style="display: flex; justify-content: center; align-items: center; ">
+        <!--第一種-->
+        <div>
+            <a href="https://www.google.com.tw/maps/@22.6680394,120.3089536,15z?hl=zh-TW">
+                <img src="images/1565360270-a96b05543140a5ca53af705b446079e8.jpg"
+                     style="width:90px;height:50px" />
+            </a>
+        </div>
+        <!--第二種-->
+        <input type="button" value="FaceBook" name="FaceBook1"
+               style="background-color: #1d64f7; color: white; width: 100px; height: 50px; font-family:'Times New Roman', Times, serif"
+               onclick="location.href='https://www.facebook.com/'" />
+        <!--第三種-->
+        <a href="https://www.youtube.com/">
+            <input type="button" value="YouTube" name="YouTube1"
+                   style="background-color:#d40c0c;color:white;width:100px;height:50px; font-family:'Times New Roman', Times, serif" />
+        </a>
+
+        <a href="https://www.spotify.com/tw/">
+            <input type="button" value="Spotify" name="Spotify1"
+                   style="background-color: #17d52f; color: white; width: 100px; height: 50px; font-family:'Times New Roman', Times, serif" />
+        </a>
+
+    </form>
+   
+
+
+
+</body>
+</html>
